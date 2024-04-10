@@ -15,9 +15,11 @@ button.addEventListener("click", function() {
     if (cat.classList.contains("show")) {
         // console.log("yes");
         cat.classList.remove("show");
+        button.innerText = "Wait comeback!";
     }
     else {
         // console.log("no");
         cat.classList.add("show");
+        button.innerText = "Shoo cat!";
     }
 });
