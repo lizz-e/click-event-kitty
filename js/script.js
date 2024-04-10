@@ -10,5 +10,14 @@ var cat = document.querySelector(".cat");
 button.addEventListener("click", function() {
     // press the button and see message in console of its working
     // console.log("It's working!")
-    cat.classList.add("show");
+    // cat.classList.add("show");
+
+    if (cat.classList.contains("show")) {
+        // console.log("yes");
+        cat.classList.remove("show");
+    }
+    else {
+        // console.log("no");
+        cat.classList.add("show");
+    }
 });
