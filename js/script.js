@@ -16,10 +16,11 @@ button.addEventListener("click", function() {
         // console.log("yes");
         cat.classList.remove("show");
         button.innerText = "Wait comeback!";
-    }
-    else {
+        button.classList.add("disappear");
+    }else {
         // console.log("no");
         cat.classList.add("show");
         button.innerText = "Shoo cat!";
+        button.classList.remove("disappear");
     }
 });
